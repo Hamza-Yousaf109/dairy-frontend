@@ -1,38 +1,70 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f6f6f6; /* Light grey */
+}
+
 .App {
+  max-width: 500px;
+  margin: 30px auto;
+  padding: 30px;
+  background: #fff; /* White */
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+.title {
+  color: #4CAF50; /* Green */
   text-align: center;
+  margin-bottom: 30px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h2 {
+  color: #333;
+  margin-bottom: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="number"],
+button {
+  padding: 15px;
+  margin: 15px 0;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  width: 100%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="number"] {
+  background: #f0f0f0; /* Light grey */
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+button {
+  background: linear-gradient(to right, #4CAF50, #45a049); /* Green gradient */
   color: white;
+  cursor: pointer;
+  transition: background 0.3s ease;
 }
 
-.App-link {
-  color: #61dafb;
+button:disabled {
+  background: #cccccc;
+  cursor: not-allowed;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button:hover {
+  background: linear-gradient(to right, #45a049, #4CAF50);
 }
+
+p {
+  color: #ff4d4d; /* Red */
+  text-align: center;
+  margin-top: 15px;
+}
+
